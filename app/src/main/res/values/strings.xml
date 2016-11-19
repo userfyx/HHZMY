@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HHZMY</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home">home</string>
+    <string name="type">type</string>
+    <string name="shop">shop</string>
+    <string name="mine">mine</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

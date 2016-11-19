@@ -1,0 +1,275 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hhzmy.fragment.HomeFragment">
+    <!-- title -->
+    <!--<include-->
+        <!--android:id="@+id/include"-->
+        <!--layout="@layout/top_title"/>-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#f00"
+        android:id="@+id/lin"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/erweima"
+            android:layout_weight="0.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"
+            android:src="@mipmap/icon_scan_top"/>
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:src="@mipmap/icon_search_home"/>
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:text="商品"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/message"
+            android:layout_weight="0.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/icon_mes_top"/>
+
+    </LinearLayout>
+
+    <!--ScrollView-->
+    <ScrollView
+        android:layout_below="@id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--整个LinearLayout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                    <!-- 无限轮播-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--轮播viewpager-->
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+                    </android.support.v4.view.ViewPager>
+
+                    <!-- 存放代表viewpager播到第几张的小圆点 -->
+                    <LinearLayout
+                        android:id="@+id/ll_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#55000000"
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="5dip">
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            <!-- 8个专题  -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+            <!-- 秒杀  -->
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+                </android.support.v7.widget.RecyclerView>
+
+            <!-- 傲娇品牌 -->
+
+                <ImageView
+                    android:id="@+id/image_aojiao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"/>
+            <!--5衣食-->
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/five_recycler"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp">
+               </android.support.v7.widget.RecyclerView>
+            <!--6住行用-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/six_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+            </android.support.v7.widget.RecyclerView>
+            <!--7玩育-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/seven_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+            </android.support.v7.widget.RecyclerView>
+            <!--9-->
+            <ImageView
+                android:id="@+id/image_nine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+            <!--10准妈妈备孕&孕期及产后-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ten"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+            </android.support.v7.widget.RecyclerView>
+            <!--11新生儿专区&婴儿专区&幼儿专区&学前专区-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/oneone"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+            </android.support.v7.widget.RecyclerView>
+
+            <!--13主题专卖-->
+            <ImageView
+                android:id="@+id/image_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+            <!--14洋货——超值购-->
+            <ImageView
+                android:id="@+id/image_first"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"/>
+            <!--15-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+            </android.support.v7.widget.RecyclerView>
+            <!--16聚优聚省聚惠-->
+            <ImageView
+                android:id="@+id/image_second"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"/>
+            <!--17-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/second"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+            </android.support.v7.widget.RecyclerView>
+            <!--18加量——不加价-->
+            <ImageView
+                android:id="@+id/image_third"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"/>
+            <!--19-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/third"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+            </android.support.v7.widget.RecyclerView>
+            <!--20省钱——败好货-->
+            <ImageView
+                android:id="@+id/image_fourth"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"/>
+            <!--21-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fourth"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+            </android.support.v7.widget.RecyclerView>
+            <!--23辣妈拼团-->
+            <ImageView
+                android:id="@+id/image_pingtuan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"/>
+            <!--24运智贝-->
+            <ImageView
+                android:id="@+id/image_24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+            <!--26康贝-->
+            <ImageView
+                android:id="@+id/image_26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+            <!--28喜朗-->
+            <ImageView
+                android:id="@+id/image_28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"/>
+            <!--30强生-->
+            <ImageView
+                android:id="@+id/image_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY" />
+            <!--32雀氏-->
+            <ImageView
+                android:id="@+id/image_32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"/>
+            <!--33查看更多-->
+            <TextView
+                android:id="@+id/more_search"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="#62f1eaea"
+                android:text="到底啦，明天10点1元秒杀，千万别错过哦"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
