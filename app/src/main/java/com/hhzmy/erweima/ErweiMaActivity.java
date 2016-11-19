@@ -1,4 +1,4 @@
-package com.hhzmy.main;
+package com.hhzmy.erweima;
 
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+
+import com.hhzmy.main.R;
+
 import cn.bingoogolapple.qrcode.core.QRCodeView;
 import cn.bingoogolapple.qrcode.zbar.ZBarView;
 

@@ -1,4 +1,4 @@
-package com.hhzmy.main;
+package com.hhzmy.map;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -17,6 +17,7 @@ import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.map.MyLocationData;
 import com.baidu.mapapi.model.LatLng;
+import com.hhzmy.main.R;
 
 public class MyMapActivity extends AppCompatActivity {
     private static final int ACCESS_COARSE_LOCATION_REQUEST_CODE = 1;

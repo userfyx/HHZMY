@@ -1,4 +1,4 @@
-package com.hhzmy.main;
+package com.hhzmy.webview;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.hhzmy.main.R;
 
 public class HomeTopActivity extends AppCompatActivity {
 

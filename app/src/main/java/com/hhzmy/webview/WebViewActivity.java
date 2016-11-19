@@ -1,10 +1,12 @@
-package com.hhzmy.main;
+package com.hhzmy.webview;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+
+import com.hhzmy.main.R;
 
 public class WebViewActivity extends AppCompatActivity {
 

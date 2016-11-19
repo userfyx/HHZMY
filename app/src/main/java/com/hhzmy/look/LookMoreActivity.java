@@ -1,9 +1,11 @@
-package com.hhzmy.main;
+package com.hhzmy.look;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
+
+import com.hhzmy.main.R;
 
 public class LookMoreActivity extends AppCompatActivity {
 

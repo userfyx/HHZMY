@@ -1,4 +1,4 @@
-package com.hhzmy.main;
+package com.hhzmy.xiangqing;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.hhzmy.main.R;
+import com.hhzmy.shop.ShopCarActivity;
 import com.hhzmy.zhifubao.PayDemoActivity;
 
 public class Main2Activity extends AppCompatActivity {

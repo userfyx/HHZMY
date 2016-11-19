@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.hhzmy.bean.Data;
-import com.hhzmy.main.HomeTopActivity;
+import com.hhzmy.webview.HomeTopActivity;
 import com.hhzmy.main.R;
 import com.nostra13.universalimageloader.core.ImageLoader;
 

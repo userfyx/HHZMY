@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.hhzmy.main.LookMoreActivity">
+    tools:context="com.hhzmy.look.LookMoreActivity">
 
     <WebView
         android:id="@+id/webView_url"

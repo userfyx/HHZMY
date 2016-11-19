@@ -1,4 +1,4 @@
-package com.hhzmy.main;
+package com.hhzmy.daohang;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import com.hhzmy.adapter.ThreeFragmentAdapter;
+import com.hhzmy.main.MainActivity;
+import com.hhzmy.main.R;
+
 import java.util.ArrayList;
 import java.util.List;
 

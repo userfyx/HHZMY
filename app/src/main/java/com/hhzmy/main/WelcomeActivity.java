@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.baidu.mapapi.SDKInitializer;
+import com.hhzmy.daohang.ThreeFragmentsActivity;
 
 import java.util.Timer;
 import java.util.TimerTask;

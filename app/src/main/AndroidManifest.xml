@@ -51,13 +51,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ThreeFragmentsActivity" />
+        <activity android:name="com.hhzmy.daohang.ThreeFragmentsActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".HomeTopActivity" />
-        <activity android:name=".WebViewActivity" />
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".ShopCarActivity" />
-        <activity android:name=".MyMapActivity" />
+        <activity android:name="com.hhzmy.webview.HomeTopActivity" />
+        <activity android:name="com.hhzmy.webview.WebViewActivity" />
+        <activity android:name="com.hhzmy.xiangqing.Main2Activity" />
+        <activity android:name="com.hhzmy.shop.ShopCarActivity" />
+        <activity android:name="com.hhzmy.map.MyMapActivity" />
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
@@ -68,9 +68,9 @@
             android:enabled="true"
             android:process=":remote" />
 
-        <activity android:name=".ErweiMaActivity" />
+        <activity android:name="com.hhzmy.erweima.ErweiMaActivity" />
         <activity android:name="com.hhzmy.zhifubao.PayDemoActivity" />
-        <activity android:name=".LookMoreActivity"></activity>
+        <activity android:name="com.hhzmy.look.LookMoreActivity"></activity>
     </application>
 
 </manifest>

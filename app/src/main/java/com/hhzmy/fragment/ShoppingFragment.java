@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.hhzmy.main.MyMapActivity;
+import com.hhzmy.map.MyMapActivity;
 import com.hhzmy.main.R;
 
 public class ShoppingFragment extends Fragment {

@@ -5,7 +5,7 @@
     android:id="@+id/activity_test_scan"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ErweiMaActivity"
+    tools:context="com.hhzmy.erweima.ErweiMaActivity"
     style="@style/MatchMatch"
     >
 

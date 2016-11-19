@@ -1,4 +1,4 @@
-package com.hhzmy.main;
+package com.hhzmy.shop;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,6 +19,7 @@ import com.google.gson.Gson;
 import com.hhzmy.bean.CarData;
 import com.hhzmy.bean.ShopCarDataBean;
 import com.hhzmy.httputil.OkHttp;
+import com.hhzmy.main.R;
 import com.hhzmy.zhifubao.PayDemoActivity;
 
 import java.io.IOException;
