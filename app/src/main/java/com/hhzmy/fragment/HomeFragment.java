@@ -199,6 +199,8 @@ public class HomeFragment extends Fragment {
                       tagBeanList= data.getData().get(num).getTag();
                       ImageView image_project= (ImageView) getView().findViewById(R.id.image_first);
                       ImageLoader.getInstance().displayImage("http://image1.suning.cn/"+tagBeanList.get(0).getPicUrl(),image_project,options);
+                      //图片
+                      imageWebView(image_project,num);
                   }//first
                   else if (num==15){
                       tagBeanList= data.getData().get(num).getTag();
@@ -213,7 +215,9 @@ public class HomeFragment extends Fragment {
                   else if (num==16){
                       tagBeanList= data.getData().get(num).getTag();
                       ImageView image_project= (ImageView) getView().findViewById(R.id.image_second);
-                      ImageLoader.getInstance().displayImage("http://image1.suning.cn/"+tagBeanList.get(0).getPicUrl(),image_project,options);
+                      ImageLoader.getInstance().displayImage("http://image1.suning.cn/"+tagBeanList.get(0).getPicUrl(),image_project,options);//图片
+                      //图片
+                      imageWebView(image_project,num);
                   }//second
                   else if (num==17){
                       tagBeanList= data.getData().get(num).getTag();
@@ -229,6 +233,8 @@ public class HomeFragment extends Fragment {
                       tagBeanList= data.getData().get(num).getTag();
                       ImageView image_project= (ImageView) getView().findViewById(R.id.image_third);
                       ImageLoader.getInstance().displayImage("http://image1.suning.cn/"+tagBeanList.get(0).getPicUrl(),image_project,options);
+                      //图片
+                      imageWebView(image_project,num);
                   }//third
                   else if (num==19){
                       tagBeanList= data.getData().get(num).getTag();
@@ -244,6 +250,8 @@ public class HomeFragment extends Fragment {
                       tagBeanList= data.getData().get(num).getTag();
                       ImageView image_project= (ImageView) getView().findViewById(R.id.image_fourth);
                       ImageLoader.getInstance().displayImage("http://image1.suning.cn/"+tagBeanList.get(0).getPicUrl(),image_project,options);
+                      //图片
+                      imageWebView(image_project,num);
                   }//fourth
                   else if (num==21){
                       tagBeanList= data.getData().get(num).getTag();
@@ -264,26 +272,36 @@ public class HomeFragment extends Fragment {
                       tagBeanList= data.getData().get(num).getTag();
                       ImageView image_pt= (ImageView) getView().findViewById(R.id.image_24);
                       ImageLoader.getInstance().displayImage("http://image1.suning.cn/"+tagBeanList.get(0).getPicUrl(),image_pt,options);
+                      //图片
+                      imageWebView(image_pt,num);
                   }//康贝
                   else if (num==26){
                       tagBeanList= data.getData().get(num).getTag();
                       ImageView image_pt= (ImageView) getView().findViewById(R.id.image_26);
                       ImageLoader.getInstance().displayImage("http://image1.suning.cn/"+tagBeanList.get(0).getPicUrl(),image_pt,options);
+                      //图片
+                      imageWebView(image_pt,num);
                   }//喜朗
                   else if (num==28){
                       tagBeanList= data.getData().get(num).getTag();
                       ImageView image_pt= (ImageView) getView().findViewById(R.id.image_28);
                       ImageLoader.getInstance().displayImage("http://image1.suning.cn/"+tagBeanList.get(0).getPicUrl(),image_pt,options);
+                      //图片
+                      imageWebView(image_pt,num);
                   }//强生
                   else if (num==30){
                       tagBeanList= data.getData().get(num).getTag();
                       ImageView image_pt= (ImageView) getView().findViewById(R.id.image_30);
                       ImageLoader.getInstance().displayImage("http://image1.suning.cn/"+tagBeanList.get(0).getPicUrl(),image_pt,options);
+                      //图片
+                      imageWebView(image_pt,num);
                   }//雀氏
                   else if (num==32){
                       tagBeanList= data.getData().get(num).getTag();
                       ImageView image_pt= (ImageView) getView().findViewById(R.id.image_32);
                       ImageLoader.getInstance().displayImage("http://image1.suning.cn/"+tagBeanList.get(0).getPicUrl(),image_pt,options);
+                      //图片
+                      imageWebView(image_pt,num);
                   }//查看更多
                   else if (num==33){
                       tagBeanList= data.getData().get(num).getTag();
@@ -300,6 +318,8 @@ public class HomeFragment extends Fragment {
                   }
               }
             }
+
+
         });
         ImageView ewm= (ImageView) view.findViewById(R.id.erweima);
 
@@ -346,6 +366,17 @@ public class HomeFragment extends Fragment {
 
             }
         }));
+    }
+    private void imageWebView(ImageView image,int a) {
+        final int finalNum=a;
+        image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), WebViewActivity.class);
+                intent.putExtra("one",data.getData().get(finalNum).getTag().get(0).getLinkUrl());
+                getContext().startActivity(intent);
+            }
+        });
     }
 
 }
